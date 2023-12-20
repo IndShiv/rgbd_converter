@@ -1,0 +1,20 @@
+<launch>
+
+
+<node name="image_view_node" pkg="image_view" type="image_saver" output="screen" clear_params="true">
+        <remap from="image" to="/image_converter/output_video"/>
+        <param name="save_all_image" value="true"/>
+        <param name="filename_format" value="/home/shival/TestDepthSamples/%04i.png"/>
+        
+            
+</node>
+
+<node name="image_view_node1" pkg="image_view" type="image_saver" output ="screen" clear_params="true">
+        <remap from="image" to="/camera/rgb/image_raw"/>
+        <param name="save_all_image" value="true"/>
+        <param name="filename_format" value="/home/shival/TestDepthSamples/RGB/%04i.png"/>
+        
+       
+</node>
+
+</launch>
