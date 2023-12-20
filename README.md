@@ -1,2 +1,2 @@
-# rgbd_convertor
+# rgbd_converter
 Converts depth images and saves them locally - adjust launch file. 
